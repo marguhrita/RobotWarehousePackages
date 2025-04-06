@@ -108,7 +108,7 @@ ros2 run nav2_map_server map_saver_cli -f ˜/map
 
 To run the simulation, perform these additional steps
 1. Move ”turtlebot multi robot” into ”turtlebot ws/src” directory.
-2. Make sure Gazebo is installed - check the [e-manual]() for instructions
+2. Make sure Gazebo is installed - check the [e-manual](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) for instructions
 3. run colcon build within ”turtlebot ws”.
 ```bash
 colcon build --symlink-install
