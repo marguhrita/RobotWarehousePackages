@@ -103,3 +103,18 @@ ros2 run nav2_map_server map_saver_cli -f ˜/map
 ```
 
 5. Make sure to move the generated map files into the ”RobotWarehouse” package!
+
+## Simulation
+
+To run the simulation, perform these additional steps
+1. Move ”turtlebot multi robot” into ”turtlebot ws/src” directory.
+2. Make sure Gazebo is installed - check the [e-manual]() for instructions
+3. run colcon build within ”turtlebot ws”.
+```bash
+colcon build --symlink-install
+```
+4. Run the following command to start a simulation with two robots
+```bash
+ros2 launch turtlebot3_multi_robot gazebo_multi_nav2_world.launch.py enable
+```
+5. Run ”main.py” in ”RobotWarehouse”
