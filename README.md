@@ -80,7 +80,7 @@ python3 main.py
 9. Any initialized robots on the same ROS domain as the controller will show up on
 the user interface!
 
-## B.3 Saving a Map
+## Saving a Map
 These instructions are adapted from the Turtlebot3 e-manual.
 1. Initialize the robot without namespacing (on the robot) by running the following command.
 ```bash
