@@ -26,12 +26,12 @@ using within the ”params” directory in the ”multi bringup” package - the
 comes with parameter files for ”burger” and ”waffle” turtlebots.
 8. Within the ”yaml” files, ensure that the root key is the namespace of the robot.
 9. Run the following command while in the ”turtlebot3 ws” directory.
-10. 
+
 ```bash
 colcon build --symlink-install
 ```
 
-11. Source the installation script which should be generated in a new ”install” direc-
+10. Source the installation script which should be generated in a new ”install” direc-
 tory within ”turtlebot ws” with the following command. This can be added to the
 ”bashrc” file to avoid needing to manually execute it in future runs.
 
@@ -39,7 +39,7 @@ tory within ”turtlebot ws” with the following command. This can be added to 
 source ˜/turtlebot3_ws/install/setup.bash
 ```
 
-12. The robot initialization can now be run with the following command
+11. The robot initialization can now be run with the following command
 ```bash
 ros2 launch multi_bringup multi_bringup.launch.py
 ```
@@ -60,10 +60,16 @@ mkdir src
 4. Move the ”robot w” and ”state pubsub” packages into the ”src” directory.
 5. Install ”cartographer”, ”teleop” and ”turtlebot bringup” packages for map genera-
 tion - this can be done by following the ”Quick Start” section in the [Turtlebot3 e-manual](file:///C:/Users/Alastair/Downloads/Robot_Warehouse_Report-4.pdf#cite.turtlebot3_emanual).
-6. Follow the ”SLAM” instructions on the e-manual, or view the ”Map Saving”
+6. Run the following command while in the ”turtlebot3 ws” directory.
+
+```bash
+colcon build --symlink-install
+```
+
+7. Follow the ”SLAM” instructions on the e-manual, or view the ”Map Saving”
 section in Appendix B B.3 to navigate the robot around your chosen area, and
 save the map to the ”RobotWarehouse” package as ”map.yaml” and ”map.pgm”.
-7. Navigate into the ”RobotWarehouse” package and run ”main.py” to start the system. If Python is not installed, it will need to be installed.
+8. Navigate into the ”RobotWarehouse” package and run ”main.py” to start the system. If Python is not installed, it will need to be installed.
 
 ```bash
 sudo apt install python3
@@ -71,7 +77,7 @@ cd RobotWarehouse
 python3 main.py
 ```
 
-8. Any initialized robots on the same ROS domain as the controller will show up on
+9. Any initialized robots on the same ROS domain as the controller will show up on
 the user interface!
 
 ## B.3 Saving a Map
